@@ -1,0 +1,76 @@
+	/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+ /* Screen: 1280px */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* Screen: 1366px */
+@media only screen and (min-width : 1331px) {
+header .top{
+	min-height: 768px;
+}
+}
+
+/* Screen: 1440px */
+@media only screen and (min-width : 1405px) {
+header .top{
+	min-height: 900px;
+}
+}
+
+/* Screen: 1680px */
+@media only screen and (min-width : 1645px) {
+header .top{
+	min-height: 1050px;
+}
+}
+
+/* Screen: 1920px */
+@media only screen and (min-width : 1885px) {
+header .top{
+	min-height: 1080px;
+}
+}
+
+/* Screen: 2k */
+@media only screen and (min-width : 2048px) {
+header .top{
+	min-height: 1080px;
+}
+}
+
+/* Screen: 4k */
+@media only screen and (min-width : 3840px) {
+header .top{
+	min-height: 2100px;
+}
+}
