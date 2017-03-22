@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "bourbon/bourbon"
 
 //Colors
@@ -554,3 +555,540 @@ body
 
 
 	
+=======
+@import "bourbon/bourbon"
+
+//Colors
+$color:  #d8ec54 //theme color
+$textcolor: #b7b7b7
+$mtextcolor: #898888
+$maincolor: #1d1e1f
+$w: #fff
+$b: #010101
+$bb: #000
+$dark: #1d1d1d
+$ddark: #181818
+//End Colors
+
+*
+	margin: 0
+	padding: 0
+
+body
+	font-family: "MyriadPro", Arial, sans-serif
+	font-size: 15px
+	line-height: 1.42857143
+	color: $maincolor
+
+.loader 
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner 
+		background-image: url("../img/preloader.gif")
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+.wrapper
+	width: 1170px
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto	
+.top
+	background: url(../img/bckgr.png) no-repeat top center #fff 
+	background-size: 100% 100%
+	width: 100%
+	min-height: 800px
+
+.nav_logo
+	position: relative
+	min-height: 1px
+	padding-left: 15px
+	padding-right: 15px
+	z-index: 100
+	nav
+		position: relative
+		.logo
+			position: absolute
+			top: 0
+			left: 535px
+			svg
+				width: 97px
+				height: 60px
+		ul
+			margin: 0
+			padding: 20px 0 0 255px
+			li
+				list-style-type: none
+				display: inline-block
+				a
+					font-family: "Roboto", Arial, sans-serif
+					font-size: 13px
+					text-decoration: none
+					color: $b
+					margin: 0 20px
+					&:hover
+						color: #3F3F3F
+						text-shadow: 1px 1px 2px $color
+						border-bottom: 1px solid $color
+						+transition(all 0.25s ease)
+				.r_spacer
+					margin-right: 150px
+
+.table_wr
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+	.row_wr
+		display: table-row
+		.cell_wr
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.content
+		display: inline-block
+		margin-top: 60px
+		h1
+			font-size: 44px
+			color: $maincolor
+			text-transform: uppercase
+			font-weight: 400
+			+animation-delay(1.5s)
+			.s
+				font-size: 32px
+		p
+			font-size: 19px
+			color: $mtextcolor
+			margin-bottom: 40px
+			+animation-delay(2.3s)
+		.btn
+			padding: 25px 20px
+			font-size: 13px
+			text-transform: uppercase
+			text-decoration: none
+			color: $bb
+			border: 1px solid $bb
+			+animation-delay(2.5s)
+			&:hover
+				background-color: $color
+				border-color: $color
+				+transition(all 0.85s ease)
+.bounce
+	position: absolute
+	left: 50%
+	top: 97%
+	width: 10px
+	height: 10px
+	background: #d0d0d0
+	border-radius: 5px
+	-webkit-animation: bounce-fadeOut 1.2s infinite
+	+keyframes(bounce-fadeOut)
+		0%
+			opacity: 1
+			top: 97%
+		100%
+			opacity: 0
+			top: 90%
+
+.s_about
+	background-color: $dark
+	position: relative
+.about_content
+	+clearfix
+	display: inline-block
+	position: relative
+	.circleA
+		position: absolute
+		left: 48.7692%
+		top: 13.2139%
+		background-color: $dark
+		width: 14px
+		height: 14px
+		border: 5px solid $w
+		border-radius: 12px
+		z-index: 100
+	.circleAbig
+		position: absolute
+		left: 47.829%
+		top: 12.4448%
+		background-color: $dark
+		width: 36px
+		height: 36px
+		border: 5px solid $w
+		border-radius: 23px
+		z-index: 200
+	.circleO
+		position: absolute
+		left: 48.7692%
+		top: 22.4737%
+		background-color: $dark
+		width: 14px
+		height: 14px
+		border: 5px solid $w
+		border-radius: 12px
+		z-index: 100
+	.circleObig
+		position: absolute
+		left: 47.829%
+		top: 21.342%
+		background-color: $dark
+		width: 36px
+		height: 36px
+		border: 5px solid $w
+		border-radius: 23px
+		z-index: 200
+	.circleF
+		position: absolute
+		left: 48.7692%
+		top: 41.2456%
+		background-color: $dark
+		width: 14px
+		height: 14px
+		border: 5px solid $w
+		border-radius: 12px
+		z-index: 100
+	.circleFbig
+		position: absolute
+		left: 47.829%
+		top: 40.4538%
+		background-color: $dark
+		width: 36px
+		height: 36px
+		border: 5px solid $w
+		border-radius: 23px
+		z-index: 200
+	.circleM
+		position: absolute
+		left: 48.7692%
+		top: 59.1311%
+		background-color: $dark
+		width: 14px
+		height: 14px
+		border: 5px solid $w
+		border-radius: 12px
+		z-index: 100
+	.circleMbig
+		position: absolute
+		left: 47.829%
+		top: 57.9635%
+		background-color: $dark
+		width: 36px
+		height: 36px
+		border: 5px solid $w
+		border-radius: 23px
+		z-index: 200
+	.left
+		text-align: right
+		float: left
+		width: 49%
+		.top_l
+			margin-top: 150px
+		.bot_l
+			margin-top: 240px
+		.about_item
+			padding-right: 68px	
+	.right
+		text-align: left
+		border-left: 5px solid $w
+		float: right
+		width: 50%
+		height: 100%
+		.about_item
+			padding-left: 68px
+		.top_r
+			margin-top: 270px
+		.bot_r
+			margin-top: 377px
+			margin-bottom: 435px	
+	h3
+		font-size: 48px
+		color: #fefefe
+		font-weight: 500
+		.year
+			font-size: 30px
+			color: $color
+	p
+		font-size: 15px
+		color: $textcolor
+
+.build
+	position: absolute
+	width: 100%
+	height: 260px
+	bottom: -3px
+	.black
+		position: absolute
+		bottom: 15px
+		svg
+			width: 100%
+			height: 100%
+	.white
+		position: absolute
+		bottom: -5px
+		svg
+			width: 100%
+			height: 100%
+
+.section_header
+	text-align: center
+	h2
+		font-size: 34px
+		font-weight: 400
+		margin-top: 92px
+	.s_descr
+		font-size: 16px
+		font-weight: 400
+		color: $mtextcolor
+		margin-bottom: 60px
+.s_team
+	.full_team
+		width: 100%
+		height: 100%
+		padding-top: 40px
+		+clearfix
+		margin-bottom: 300px
+		.indent
+			&:nth-child(2n+1)
+				margin-top: 90px
+		.team_item
+			width: 32%
+			display: inline-block
+			text-align: center
+			padding-top: 20px
+			&:first-child
+				float: left
+				margin-right: 20px
+			&:last-child
+				float: right
+			.photo
+				margin-bottom: 30px
+			h4
+				font-size: 24px
+				font-weight: 400
+				color: #464646
+			p
+				font-size: 13px
+				font-weight: 400
+				color: #b3b3b3
+				margin-bottom: 10px
+			.soc_btn
+				ul
+					margin: 0
+					padding: 0
+					li
+						display: inline-block
+						list-style-type: none
+						margin-right: 10px
+						a
+							color: #b3b3b3
+							&:hover
+								color: $color
+								+transition(all 0.25s ease)
+.s_services
+	background: $ddark
+	position: relative
+	padding-bottom: 70px
+	#triangle_bottomright
+		position: absolute
+		left: 0
+		top: -100px
+		width: 100%
+		height: 200px
+		transform: skew(0deg,-6deg)
+		background: $ddark
+		z-index: -10
+	h2
+		color: $w
+	.s_descr
+		color: #777777
+	.full_services
+		width: 100%
+		height: 100%
+		padding-top: 120px
+		+clearfix
+		.service_item
+			width: 32%
+			display: inline-block
+			text-align: center
+			padding-top: 20px
+			&:first-child
+				float: left
+				margin-right: 20px
+			&:last-child
+				float: right
+			.circle
+				display: inline-block
+				text-align: center
+				width: 160px
+				height: 160px
+				border: 6px solid $w
+				border-radius: 84px
+				margin-bottom: 40px
+				.pic
+					display: inline-block
+					width: 64px
+					height: 54px
+					text-align: center
+					padding-top: 55px
+				.pic_heart
+					display: inline-block
+					width: 72px
+					height: 63px
+					text-align: center
+					padding-top: 50px
+			h4
+				font-size: 26px
+				font-weight: 400
+				color: $w
+				margin-bottom: 30px
+			p
+				font-size: 18px
+				font-weight: 400
+				color: #929292
+.s_blog
+	background: $ddark	
+	position: relative
+	height: 100%
+	padding-bottom: 300px
+	.bcg_blog
+		position: absolute
+		bottom: -188px
+		background: url(../img/Post.png) no-repeat 50% 96%
+		height: 700px
+		width: 100%
+	.block_bnt
+		position: relative
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		.btn
+			padding-top: 270px
+			display: inline-block
+			text-align: center
+			width: 100%
+			a
+				padding: 25px 40px
+				background: $w
+				color: $bb
+				font-size: 16px
+				font-weight: 400
+				text-decoration: none
+				&:hover
+					background-color: $color
+					+transition(all 0.85s ease)
+
+.s_contact
+	background: $w
+	position: relative
+	padding-bottom: 140px
+	z-index: 20
+	#triangle_bottomright
+		position: absolute
+		left: 0
+		top: -73px
+		width: 100%
+		height: 200px
+		transform: skew(0deg,-6deg)
+		background: $w
+		z-index: -2
+	h2
+		margin: 0
+		padding-top: 97px
+	.full_contact
+		width: 60%
+		height: 100%
+		margin-left: auto
+		margin-right: auto
+		+clearfix
+		.contact_item
+			width: 32%
+			display: inline-block
+			text-align: center
+			padding-top: 5px
+			&:first-child
+				float: left
+				margin-right: 10px
+			&:last-child
+				float: right
+			.pic_contact
+				display: inline-block
+				width: 15px
+				height: 22px
+				text-align: center
+			p
+				font-size: 12px
+				font-weight: 400
+				color: $mtextcolor
+	.full_form
+		width: 80%
+		height: 100%
+		margin-left: auto
+		margin-right: auto
+		margin-top: 130px
+		p
+			margin-bottom: 20px
+			input,
+			textarea
+				width: 100%
+				text-align: center
+				padding-top: 20px
+				padding-bottom: 20px
+				font-size: 15px
+				color: $mtextcolor
+				border: 1px solid #999999
+				&:focus
+					outline: none
+					border: 1px solid $color
+					+transition(all 0.35s ease)
+				&:hover
+					border: 1px solid $color
+					+transition(all 0.15s ease)
+			.helv
+				font-family: "Helvetica", "MyriadPro", Arial
+				font-size: 15px
+				font-weight: 400
+			.subm_btn
+				font-size: 17px
+				background: #161616
+				color: #fefefe
+				border: none
+				&:hover
+					background: $color
+					color: $bb
+					border: none
+					+transition(all 0.55s ease)
+.footer
+	.mid_footer
+		width: 50%
+		margin: 15px auto 30px
+		text-align: center
+		font-size: 14px
+		color: #3b3b3b
+
+		
+
+
+
+
+
+	
+>>>>>>> refs/remotes/origin/master
