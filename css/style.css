@@ -539,6 +539,30 @@ body {
           border: 1px solid #d8ec54;
           -webkit-transition: all 0.15s ease;
           transition: all 0.15s ease; }
+        .s_contact .full_form p input::-webkit-input-placeholder,
+        .s_contact .full_form p textarea::-webkit-input-placeholder {
+          font-family: "MyriadPro", Arial;
+          font-size: 15px;
+          font-weight: 400;
+          color: #898888; }
+        .s_contact .full_form p input::-moz-placeholder,
+        .s_contact .full_form p textarea::-moz-placeholder {
+          font-family: "MyriadPro", Arial;
+          font-size: 15px;
+          font-weight: 400;
+          color: #898888; }
+        .s_contact .full_form p input:-moz-placeholder,
+        .s_contact .full_form p textarea:-moz-placeholder {
+          font-family: "MyriadPro", Arial;
+          font-size: 15px;
+          font-weight: 400;
+          color: #898888; }
+        .s_contact .full_form p input:-ms-input-placeholder,
+        .s_contact .full_form p textarea:-ms-input-placeholder {
+          font-family: "MyriadPro", Arial;
+          font-size: 15px;
+          font-weight: 400;
+          color: #898888; }
       .s_contact .full_form p .helv {
         font-family: "Helvetica", "MyriadPro", Arial;
         font-size: 15px;
